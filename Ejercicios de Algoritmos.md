@@ -7,7 +7,7 @@ Algoritmo hola_mundo
 	Escribir "Hola mundo"
 FinAlgoritmo
 ```
-Entrada: -
+Entrada: -    
 Salida: Hola mundo
 
 2.  A partir de un número ingresado diga si es mayor, menor o igual a 9.
@@ -28,21 +28,22 @@ Algoritmo MayoresIgualesMenoresA9 (INICIO)
 	Fin Si
 FinAlgoritmo (FIN)
 ```
-Entrada: N
-Salidas: 3, Escribir... 
+Entrada: N      
+Salidas: 3, Escribir...      
 El paso 2 sirve para inicializar la variable N
+
 ![](img\alg1.PNG)
 
 Comprobación:
-N: 0
-Escribir: "Escribir el numero" (entonces escribimos un numero que elegimos, p.ej. el 5)
-N: 5
-saltamos paso 5 porque no cumple la condicion
-pasamos al paso 7
-pasamos al paso 8
-como no cumple la condicion, pasamos al 10. cumple la condicion y se escribe "El numero es menor a 9"
-el paso 12 pone fin a lo que empieza en 8
-el paso 13 pone fin a lo que empieza en 5
+N: 0     
+Escribir: "Escribir el numero" (entonces escribimos un numero que elegimos, p.ej. el 5)   
+N: 5         
+saltamos paso 5 porque no cumple la condicion       
+pasamos al paso 7        
+pasamos al paso 8          
+como no cumple la condicion, pasamos al 10.      cumple la condicion y se escribe "El numero es menor a 9"        
+el paso 12 pone fin a lo que empieza en 8      
+el paso 13 pone fin a lo que empieza en 5         
 paso 14 pone fin al algoritmo completo
 
 
@@ -62,11 +63,12 @@ FinAlgoritmo
 las palabras reservadas del algortimo son: Leer, si, sino, Escribir, Fin Si, entonces, FinAlgoritmo, =
 
 ![](img\alg2.PNG)
-Comprobacion: 
-nro: 7
+
+Comprobacion:        
+nro: 7         
 mod: es el resto de la division. como el resto no es 0, no cumple la condicion y salta a la linea 5.
-pasa a la 6 y escirbe 'es impar'
-linea 7 pone fin a lo que empieza en la linea3
+pasa a la 6 y escirbe 'es impar'          
+linea 7 pone fin a lo que empieza en la linea3    
 linea 8 pone fin al algoritmo
 
 4.  ingresar dos números y devuelva el resultado de la suma entre ambos.
@@ -84,15 +86,15 @@ Algoritmo SumaDosNumeros
 FinAlgoritmo
 ```
 Comprobacion
-num1: 0
-num2: 0
-aparece en pantalla: "Escribir el numero 1"
-linea 5-> num1: 3
-aparece en pantalla: "Escribir el numero 2"
-linea 7-> num2: 4
-linea 8-> se asigna a la variable Rta, la suma entre num1 y num2
-Rta: 7
-linea 9-> escribe: El resultado es 7
+num1: 0        
+num2: 0        
+aparece en pantalla: "Escribir el numero 1"     
+linea 5-> num1: 3      
+aparece en pantalla: "Escribir el numero 2"          
+linea 7-> num2: 4      
+linea 8-> se asigna a la variable Rta, la suma entre num1 y num2      
+Rta: 7      
+linea 9-> escribe: El resultado es 7       
 linea 10 finaliza el algoritmo
 
 
@@ -112,15 +114,15 @@ Algoritmo SumaDePares
 FinAlgoritmo
 ```
 ![](img\alg3.PNG)
-Prueba de escritorio
-linea 2-> sum:0
-linea 3-> nro: 2
-linea 4-> condicion, se repite el bucle mientras que nro sea menor o igual a 100
-linea 5-> si el resto de dividir el nro en 2 es 0 (es decir, si el numero es par)
-linea 6-> se suma el numero a la suma global. sum: 2
-linea 7-> fin de lo que empieza en 5
-linea 8 -> nro: 3
-linea 9-> como se sigue cumpliendo la condicion, vuelve a 4. se repite hasta que nro = 100. entonces se acaba el bucle y pasa a 10
+Prueba de escritorio     
+linea 2-> sum:0         
+linea 3-> nro: 2        
+linea 4-> condicion, se repite el bucle mientras que nro sea menor o igual a 100        
+linea 5-> si el resto de dividir el nro en 2 es 0 (es decir, si el numero es par)         
+linea 6-> se suma el numero a la suma global. sum: 2         
+linea 7-> fin de lo que empieza en 5         
+linea 8 -> nro: 3        
+linea 9-> como se sigue cumpliendo la condicion, vuelve a 4. se repite hasta que nro = 100. entonces se acaba el bucle y pasa a 10       
 linea 10 -> escribe 'la suma de los pares entre 2 y 100 es ...'
 
 Algoritmo mejorado
@@ -144,15 +146,15 @@ Algoritmo divisores_de_numero
 FinAlgoritmo
 ```
 ![](img\alg5.PNG)
-Comprobacion
-linea 2-> Ingrese Numero
-linea 3-> Num: 6
-linea 4-> div: 1
-linea 5-> cumple la condicion, asi que pasa a la 6
-linea 6-> condicion de ser divisor. se cumple, asi que se escribe el 1 (linea 7)
-linea 8-> div: 2. se vuelve a la linea 5 y se sigue cumpliendo la condicion. repetimos el proceso.
-el 2 es divisor (el resto de dividir 6 entre 2 es 0), por lo que se escribe. div pasa a ser 3 y se repite el bucle (div es menor a num:6). 3 tambien es divisor. tambien se escribe y pasa a 4. se repite el bucl epor cumplir la condicion. Sin embargo, en este caso, el resto de dividir num:6 entre div:4, no es 0, por lo que no se escribe. SE suma 1 a div y pasa a ser 5. Se repite el bucle. 5 tampoco es divisor. No se escribe. div:6. SE repite el bucle. El resto es 0 y se escribe. div:7. Ya no cumple la condicion y se pasa a linea 10. 
-linea 11-> fin algoritmo. 
+Comprobacion   
+linea 2-> Ingrese Numero     
+linea 3-> Num: 6    
+linea 4-> div: 1    
+linea 5-> cumple la condicion, asi que pasa a la 6     
+linea 6-> condicion de ser divisor. se cumple, asi que se escribe el 1 (linea 7)        
+linea 8-> div: 2. se vuelve a la linea 5 y se sigue cumpliendo la condicion. repetimos el proceso.    
+el 2 es divisor (el resto de dividir 6 entre 2 es 0), por lo que se escribe. div pasa a ser 3 y se repite el bucle (div es menor a num:6). 3 tambien es divisor. tambien se escribe y pasa a 4. se repite el bucle por cumplir la condicion. Sin embargo, en este caso, el resto de dividir num:6 entre div:4, no es 0, por lo que no se escribe. SE suma 1 a div y pasa a ser 5. Se repite el bucle. 5 tampoco es divisor. No se escribe. div:6. SE repite el bucle. El resto es 0 y se escribe. div:7. Ya no cumple la condicion y se pasa a linea 10.      
+linea 11-> fin algoritmo.     
 Asi, quedarian escritos 1, 2, 3, 6
 
 
@@ -162,22 +164,38 @@ Asi, quedarian escritos 1, 2, 3, 6
 7. Determinar si un alumno aprueba o suspende un curso, sabiendo que aprobará si su promedio de tres calificaciones es mayor o igual a 4.0; supsende en caso contrario. Deberá permitir ingresar las tres calificaciones y luego calcular su promedio.
 
 ```
-Algoritmo aprueba_reprueba
-	Escribir "Ingrese calificacion 1"
-		Leer Cal1
-	Escribir "Ingrese calificacion 2"
-		Leer Cal2
-	Escribir "Ingrese calificacion 3"
-		Leer Cal3
-	Prom<-(Cal1+Cal2+Cal3)/3 	                           
-        Si Prom>=4 Entonces
-		Escribir "Aprueba"
-	Sino
-		Escribir "Reprueba"
-	Fin Si
-	Escribir Prom
-FinAlgoritmo
+Algoritmo aprueba_reprueba //1
+	Escribir "Ingrese calificacion 1" //2
+		Leer Cal1 //3
+	Escribir "Ingrese calificacion 2" //4
+		Leer Cal2 //5
+	Escribir "Ingrese calificacion 3" //6
+		Leer Cal3 //7
+	Prom<-(Cal1+Cal2+Cal3)/3  //8	                           
+        Si Prom>=4 Entonces //9
+		Escribir "Aprueba" //10
+	Sino //11
+		Escribir "Reprueba" //12
+	Fin Si //13
+	Escribir Prom //14
+FinAlgoritmo //15
 ```
+
+Comprobacion
+linea 2-> Ingrese calificacion 1
+linea 3-> Cal1: 5
+linea 4-> Ingrese calificacion 2
+linea 5-> Cal2: 3
+linea 6-> Ingrese calificacion 3
+linea 7-> Cal3: 2
+linea 8-> Prom: 3.33
+linea 9-> no cumple condicion, pasa a 11
+linea 12-> Reprueba
+linea 14-> 3.33
+linea 15-> fin del algoritmo
+
+
+
 
 8. Crear un algoritmo que permita ingresar un nombre y una cantidad numérica para escribir este nombre tantas veces como su cantidad ingresada. 
 
