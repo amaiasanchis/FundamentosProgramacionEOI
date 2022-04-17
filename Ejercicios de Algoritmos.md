@@ -359,64 +359,65 @@ fin
 
 13. Ejercicios Propuestos
     1. Calcular y mostrar el cuadrado de los números del 1 a 30.
-
-Algoritmo Cuadrados1al30
-resul <- 0
-nro <- 1
-Mientras nro <= 30
-	resul <- resul + nro*nro
-	nro <- nro + 1
-FinMientras
-Escribe resul
-FinAlgoritmo
-
+	
+```
+Algoritmo Cuadrados1al30       
+resul <- 0         
+nro <- 1      
+Mientras nro <= 30      
+	resul <- resul + nro*nro      
+	nro <- nro + 1      
+FinMientras      
+Escribe resul      
+FinAlgoritmo      
+```
 
 
     2. Números primos (ejercicio 11)
     3. Construir un avión de papel
-
+```
 Algoritmo construiravion
 
-
+```
 
 
 
     4. Realizar las cuatro operaciones básicas (Suma, Resta, Multiplicación, División)
     5. Volumen y Area de un Cilindro
     6. Pedir un libro en una biblioteca
-
+```
 Algoritmo pedirlibrobiblioteca
-
+```
 
 
 
     7. Encontrar el mayor número de tres números
-
-Algoritmo mayordetresnumeros
-	Escribir "Ingrese numero 1" 
-		Leer Num1
-	Escribir "Ingrese numero 2" 
-		Leer Num2
-	Escribir "Ingrese numero 3" 
-		Leer Num3
-mayor <- 0
-//comparar num1 y num2
-Si Num1 > Num2
-	mayor <- Num1
-Sino 
-	mayor <- Num2
+```
+Algoritmo mayordetresnumeros      
+	Escribir "Ingrese numero 1"       
+		Leer Num1      
+	Escribir "Ingrese numero 2"       
+		Leer Num2      
+	Escribir "Ingrese numero 3"       
+		Leer Num3      
+mayor <- 0      
+//comparar num1 y num2      
+Si Num1 > Num2      
+	mayor <- Num1      
+Sino       
+	mayor <- Num2      
+FinSi      
+// comparar num2 y num3      
+Si Num3 > Num2      
+	mayor <- Num3      
 FinSi
-// comparar num2 y num3
-Si Num3 > Num2
-	mayor <- Num3
-FinSi
-// comparar num1 y num3
-Si Num3 > Num1
-	mayor <- Num3
-FinSi
-Escribir mayor
-FinAlgoritmo
-
+// comparar num1 y num3      
+Si Num3 > Num1      
+	mayor <- Num3      
+FinSi      
+Escribir mayor      
+FinAlgoritmo      
+```
 
 
 
