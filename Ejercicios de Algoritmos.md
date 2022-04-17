@@ -201,99 +201,225 @@ linea 15-> fin del algoritmo
 
 ```
 Algoritmo Cantidad_nombre
-	Escribir "Ingresar Nombre"
+	Escribir "Ingresar Nombre" // 2
 	Leer nombre
-	Escribir "Ingresar Cantidad"
+	Escribir "Ingresar Cantidad" // 4
 	Leer num
-	Mientras Num>0 Hacer
+	Mientras Num>0 Hacer // 6
 		Escribir nombre
-	Num<-Num - 1
+	Num<-Num - 1 // 8
 	Fin Mientras
-FinAlgoritmo
+FinAlgoritmo // 10
 ```
+
+linea 2: Ingresar Nombre        
+linea 3: nombre <- Pau       
+l4: Ingresar Cantidad         
+l5: Num <- 2          
+l6: cumple la condicion            
+l7: Pau          
+l8: Num <- 1     
+l6: cumple la condicion     
+l7: Pau          
+l8: Num <- 0
+l6: no cumple la condicion y pasa a l9 y l10
+
+
+
 
 9. Sumar todos los números naturales comprendidos entre 1 y 50.
 
 ```
 Algoritmo suma_numerosnaturales_1y50 
-	Num<-1
+	Num<-1 // 2
 	Resul<-0
-	Repetir
+	Repetir // 4
 	    Resul<-Resul+Num
-	    Num<-Num+1 	                           
+	    Num<-Num+1 	   // 6                         
         Hasta Que Num>50
-	Escribir Resul
+	Escribir Resul  // 8
 Fin algoritmo
 ```
+
+l1-> inicio algoritmo      
+l2-> asigna a la variable Num el valor 1        
+l3-> asigna a la variable Resul el valor 0          
+l4-> inicia un bucle repetitivo
+l5-> suma Num a Resul (1+0)      
+l6-> suma 1 a Num (2)             
+l7-> condicion del bucle. se repite hasta que num sea mayor a 50. Se vuelve a l5 y se repite mientras se cumpla la condicion.        
+l8-> escribir el valor de Resul           
+l9-> fin del algoritmo
+
+
+
 
 10. Leer tres números; si el primero es negativo, debe imprimir la multiplicación de los tres y si no lo es, imprimirá la suma.
 
 ```
 Algoritmo tresnumeros
-	Escribir "Ingrese numero 1"
+	Escribir "Ingrese numero 1" // 2
 		Leer Num1
-	Escribir "Ingrese numero 2"
+	Escribir "Ingrese numero 2" // 4
 		Leer Num2
-	Escribir "Ingrese numero 3"
+	Escribir "Ingrese numero 3" // 6
 		Leer Num3
-	Si Num1<0 Entonces
+	Si Num1<0 Entonces // 8
 		Resul<-Num1 * Num2 * Num3
-	Sino
+	Sino // 10
 		Resul<-Num1+Num2+Num3
-	Fin Si
+	Fin Si // 12
 	Escribir Resul
-FinAlgoritmo
+FinAlgoritmo  // 14
 ```
+
+l1 inicia el algoritmo. las lineas 2 a 6 piden escribir los 3 numeros y los asignan a las variables Num1, Num2 y Num3.     
+Num1: -2; Num2: 4; Num3: -3;        
+l8-> se cumple la condicion porque Num1 es negativo. pasa a linea9             
+l9-> asigna a Resul el valor resultante de la multiplicacion de los 3 numeros. Resul-> 24            
+l10-> no cumple la condiicion y pasa l12      
+l13-> 24      
+l14-> fin del algoritmo.          
+Se debe probar tambien con un valor positivo para Num1. En ese caso, no cumple la condicion de l8, salta a l10 y l11. Asigna a Resul el valor resultante de la suma de los tres numeros.             
+
+
+
+
 
 11. Si un número ingresado es primo o no. (Un número es primo si es divisible únicamente por 1 y por sí mismo).
 
 ```
 Algoritmo NumerosPrimos
-	Escribir "Ingrese un número: "
+	Escribir "Ingrese un número: " // 2
 	Leer nro
-	div <- 2
+	div <- 2 // 4
 	band <- Verdadero 	         
-        Si nro=1 Entonces 		            
+        Si nro=1 Entonces 	 // 6	            
              Escribir "Es primo" 	         
-        Sino 		             
+        Sino 		             // 8 
              Mientras band=Verdadero y nro>div Hacer
-		Si nro MOD div = 0 Entonces
+		Si nro MOD div = 0 Entonces // 10
 		    band <- Falso
-		FinSi
+		FinSi // 12
 		    div <- div +1
-	     FinMientras
+	     FinMientras    // 14
 	     si band= Verdadero Entonces
-		Escribir "Es primo"
+		Escribir "Es primo"    // 16
 	     Sino
-		Escribir "No es primo"
+		Escribir "No es primo"    // 18
 	     FinSi
-	FinSi
+	FinSi     // 20
 FinAlgoritmo
 ```
+
+l1-> inicia el algoritmo          
+l2-> Ingrese un número:
+l3-> nro: 5
+l4-> asigna div:2   
+l5-> asigna band:Verdadero      
+l6-> no cumple condicion (condicion por si nro:1. En ese caso, escribe 'Es primo' y salta al final porque no cumple el resto de condiciones) y salta a l8               
+l9-> cumple condicion 
+l10 -> no cumple condicion. el resto es distinto a 0 (5/2=2.5). Salta a 12 y 13.       
+l13 -> div:3. Repite el bucle. cumple condicion l9, no cumple 10, salta a 12. en 13 div:4. sigue cumpliendo condicion en l9, no cumple 10, salta a l12. en 13 div:5. Ya no cumple condicion l9. Pasa a l14.             
+l15 -> cumple condicion (si el numero no es primo, es que tiene algun divisor y en alguna repeticion l10 es verdadero y band pasa a falso)           
+l16-> 'Es primo'        
+fin
+
+
 
 12 . Sumar los dígitos de un número ingresado. Ejemplo: Si se ingresa 123, debería devolver 6.
 
 ```
 Algoritmo SumaDigitos
-	Escribir "Ingrese un nro: "
+	Escribir "Ingrese un nro: "  // 2
 	Leer nro
-	resul <- 0
+	resul <- 0 // 4
 	Mientras nro <> 0 Hacer
-		resul <- resul + nro MOD 10
+		resul <- resul + nro MOD 10 // 6
 		nro <- trunc(nro/10)
-	FinMientras
+	FinMientras  // 8
 	Escribir "El resultado es: " resul
-FinAlgoritmo
+FinAlgoritmo // 10
 ```
+
+l2-> ingreso un nro:            
+l3-> nro: 35                
+l4-> asigna resul:0       
+l5-> cumple condicion porque 35 es distinto a 0          
+l6-> resul: 0 + 5        
+l7-> nro:3. Sigue cumpliendo condicion en l5.        
+l6-> resul: 5 + 3        
+l7-> nro:0. No cumple condicion en l5.       
+l9->  El resultado es: 8            
+fin
+
+
+
+
 
 13. Ejercicios Propuestos
     1. Calcular y mostrar el cuadrado de los números del 1 a 30.
-    2. Números primos
+
+Algoritmo Cuadrados1al30
+resul <- 0
+nro <- 1
+Mientras nro <= 30
+	resul <- resul + nro*nro
+	nro <- nro + 1
+FinMientras
+Escribe resul
+FinAlgoritmo
+
+
+
+    2. Números primos (ejercicio 11)
     3. Construir un avión de papel
+
+Algoritmo construiravion
+
+
+
+
+
     4. Realizar las cuatro operaciones básicas (Suma, Resta, Multiplicación, División)
     5. Volumen y Area de un Cilindro
     6. Pedir un libro en una biblioteca
+
+Algoritmo pedirlibrobiblioteca
+
+
+
+
     7. Encontrar el mayor número de tres números
+
+Algoritmo mayordetresnumeros
+	Escribir "Ingrese numero 1" 
+		Leer Num1
+	Escribir "Ingrese numero 2" 
+		Leer Num2
+	Escribir "Ingrese numero 3" 
+		Leer Num3
+mayor <- 0
+//comparar num1 y num2
+Si Num1 > Num2
+	mayor <- Num1
+Sino 
+	mayor <- Num2
+FinSi
+// comparar num2 y num3
+Si Num3 > Num2
+	mayor <- Num3
+FinSi
+// comparar num1 y num3
+Si Num3 > Num1
+	mayor <- Num3
+FinSi
+Escribir mayor
+FinAlgoritmo
+
+
+
+
     8. Factorial de cualquier número
     9. Encontrar si un numero en mayor o menor a un número dado.
     10. Adivinar una palabra.
