@@ -50,6 +50,8 @@ Para entender correctamente todos los conceptos que vamos a describir en este tr
 
 ### · Contratos inteligentes
 
+![Imagen Contrato](https://camargo.life/wp-content/uploads/2018/07/Federico-Camargo-Investigador-Contratos-Inteligentes-Smart-Contracts-300x214.jpg)
+
 El concepto de contrato inteligente se empezó a dar en la década de los años 90, aunque no fue hasta la creación de las criptos y la tecnología de cadena de bloques o blockchain cuando se ha encontrado la manera de poder realizar correctamente estos contratos inteligentes.
 
 Un contrato inteligente consiste en una especie de programa que se almacena en la cadena de bloques. Esta cadena de bloques resulta un territorio neutral fuera de cualquier servidor. Sin piezas de código que definan los acuerdos entre múltiples partes, sin intermediario alguno. Los micropagos son una de las muchas opciones que podemos llevar a cabo con esta tecnología.
@@ -62,6 +64,8 @@ Esta tecnología ya está instaurada en la mayor parte de los bancos y está pre
 ### · ¿Qué es Solidity?
 
 Una vez explicado el concepto de contrato inteligente, pasamos a ver el lenguaje Solidity.
+
+![Solidity](https://www.criptonoticias.com/wp-content/uploads/2021/02/solidity-lenguaje-programacion-actualizacion.jpg)
 
 Este lenguaje de programación está basado en ECMAScript y otros lenguajes como JavaScript y C.
 
@@ -110,7 +114,7 @@ Por otra parte, según el informe HowtoToken, el desarrollador de software block
 ## Comunidad
 
 
-Se estima que el tamaño de la comunidad de desarrolladores de Solidity es de unas 200.000 personas. [fuente](https://www.freecodecamp.org/news/the-most-popular-programming-languages-used-in-blockchain-development-5133a0a207dc/#:~:text=Solidity%20is%20a%20contract%2Doriented,is%20estimated%20at%20over%20200%2C000.). 
+Se estima que el tamaño de la comunidad de desarrolladores de Solidity es de unas 200.000 personas. [Fuente](https://www.freecodecamp.org/news/the-most-popular-programming-languages-used-in-blockchain-development-5133a0a207dc/#:~:text=Solidity%20is%20a%20contract%2Doriented,is%20estimated%20at%20over%20200%2C000.). 
 
 Los resultados de la [Encuesta del desarrollador Solidity](https://blog.soliditylang.org/2022/02/07/solidity-developer-survey-2021-results/) aportan un perfil del desarrollador Solidity.
 
@@ -124,7 +128,7 @@ Además, toma algunos conceptos de Python, JavaScript y otros.
 -------------------------------------
 ## Plataforma
 
-Solidity es un lenguaje multiplataforma. Existen paquetes para su uso en Linux, macOS y Windows. [REVISAR](https://docs.soliditylang.org/en/latest/installing-solidity.html)
+Solidity es un lenguaje multiplataforma. Existen paquetes para su uso en Linux, macOS y Windows. [Fuente](https://docs.soliditylang.org/en/latest/installing-solidity.html)
 
 
 --------------------------------------
