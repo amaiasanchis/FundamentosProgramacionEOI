@@ -358,7 +358,7 @@ fin
 
 
 13. Ejercicios Propuestos
-    1. Calcular y mostrar el cuadrado de los números del 1 a 30.
+    1. Calcular y mostrar el cuadrado de los números del 1 a 30. *hecho*
 	
 ```
 Algoritmo Cuadrados1al30       
@@ -372,26 +372,81 @@ Escribe resul
 FinAlgoritmo      
 ```
 
+2. Números primos (ejercicio 11) *hecho*
+3. Construir un avión de papel *hecho*
 
-    2. Números primos (ejercicio 11)
-    3. Construir un avión de papel
+
 ```
 Algoritmo construiravion
+Obtener un papel rectangular
+Doblar por la mitad por el lado más largo y desdoblar
+Doblar hacia el centro las esquinas superiores 
+Doblar de nuevo hacia el centro las esquinas superiores
+Doblar por la marca del paso 2
+Doblar hacia fuera la parte superior por cada lado 
+FinAlgoritmo 
+
 
 ```
 
 
 
-    4. Realizar las cuatro operaciones básicas (Suma, Resta, Multiplicación, División)
-    5. Volumen y Area de un Cilindro
-    6. Pedir un libro en una biblioteca
+4. Realizar las cuatro operaciones básicas (Suma, Resta, Multiplicación, División)
+
+
+
+5. Volumen y Area de un Cilindro *hecho*
+
+```
+Algoritmo AreaCilindro
+h <- 0
+r <- 0
+A <- 0
+Escribir 'Escribir altura (h): '
+Leer h
+Escribir 'Escribir radio (r): '
+Leer r
+A <- 2*pi*r*(h+r)
+Escribir A
+FinAlgoritmo
+
+```
+
+```
+Algoritmo volumenCilindro
+h <- 0
+r <- 0
+V <- 0
+Escribir 'Escribir altura (h): '
+Leer h
+Escribir 'Escribir radio (r): '
+Leer r
+V <- pi*r^2*h
+Escribir V
+FinAlgoritmo
+
+```
+
+
+
+ 6. Pedir un libro en una biblioteca *hecho*
 ```
 Algoritmo pedirlibrobiblioteca
+Ir al mostrador
+Si bibliotecarix disponible
+	Dar titulo y nombre del autor
+	Dar el carne 
+	Retirar el libro
+Sino
+	Esperar
+FinSi
 ```
 
 
 
-    7. Encontrar el mayor número de tres números
+7. Encontrar el mayor número de tres números *hecho*
+
+versión 1
 ```
 Algoritmo mayordetresnumeros      
 	Escribir "Ingrese numero 1"       
@@ -418,9 +473,78 @@ FinSi
 Escribir mayor      
 FinAlgoritmo      
 ```
+versión 2
+```
+Algoritmo mayor3numeros  
+listanumeros <- []  
+listaorden <- [1,2,3]  
+para orden en listaorden
+	Escribir "Ingrese numero" + orden
+	Leer num y añadir a listanumeros   
+   
+mayor <- 0  
+para num en listanumeros
+	Si num > mayor
+		mayor <- num
+	FinSi
+Escribir mayor
+FinAlgoritmo
+      
+```
 
 
 
-    8. Factorial de cualquier número
-    9. Encontrar si un numero en mayor o menor a un número dado.
-    10. Adivinar una palabra.
+8. Factorial de cualquier número *hecho*
+
+```
+Algoritmo factorial
+Escribir 'Escribir numero'
+Leer num
+Si num >= 0
+	fact <-1
+	Mientras num <> 0
+		fact <- fact * num
+		num <- num-1
+	FinMientras
+	Escribir 'factorial =' + factorial
+sino
+	si num = 0
+		escribir 'factorial = 1'
+	sino 
+		escribir 'no existe factorial'
+FinSi
+FinAlgoritmo
+```
+
+
+9. Encontrar si un numero en mayor o menor a un número dado. *hecho*
+
+```
+Algoritmo comparacionNumeros
+Escribir 'Escribir numero base: '
+Leer numbase
+Escribir 'Escribir numero a comparar: '
+Leer num
+Si num>numbase
+	Escribir 'mayor'
+Sino
+	Escribir 'menor'
+FinSi
+FinAlgoritmo
+```
+
+
+
+
+10. Adivinar una palabra. *hecho*
+
+```
+Algoritmo AdivinarPalabra
+Escribir 'Escribir palabra secreta: '
+Leer palsecreta
+Decir palabra
+Mientras palabra <> palsecreta
+	Decir palabra
+FinMientras
+Escribir 'Victoria'
+```
