@@ -172,7 +172,7 @@ Algoritmo aprueba_reprueba //1
 	Escribir "Ingrese calificacion 3" //6
 		Leer Cal3 //7
 	Prom<-(Cal1+Cal2+Cal3)/3  //8	                           
-        Si Prom>=4 Entonces //9
+    Si Prom>=4 Entonces //9
 		Escribir "Aprueba" //10
 	Sino //11
 		Escribir "Reprueba" //12
@@ -297,12 +297,12 @@ Algoritmo NumerosPrimos
         Si nro=1 Entonces 	 // 6	            
              Escribir "Es primo" 	         
         Sino 		             // 8 
-             Mientras band=Verdadero y nro>div Hacer
-		Si nro MOD div = 0 Entonces // 10
-		    band <- Falso
-		FinSi // 12
-		    div <- div +1
-	     FinMientras    // 14
+            Mientras band=Verdadero y nro>div Hacer
+				Si nro MOD div = 0 Entonces // 10
+		    		band <- Falso
+				FinSi // 12
+		    		div <- div +1
+	     	FinMientras    // 14
 	     si band= Verdadero Entonces
 		Escribir "Es primo"    // 16
 	     Sino
@@ -311,12 +311,12 @@ Algoritmo NumerosPrimos
 	FinSi     // 20
 FinAlgoritmo
 ```
-
+COMPROBACIÓN CON NÚMERO PRIMO               
 l1-> inicia el algoritmo          
 l2-> Ingrese un número:
-l3-> nro: 5
-l4-> asigna div:2   
-l5-> asigna band:Verdadero      
+l3-> nro= 5
+l4-> asigna div=2   
+l5-> asigna band=Verdadero      
 l6-> no cumple condicion (condicion por si nro:1. En ese caso, escribe 'Es primo' y salta al final porque no cumple el resto de condiciones) y salta a l8               
 l9-> cumple condicion 
 l10 -> no cumple condicion. el resto es distinto a 0 (5/2=2.5). Salta a 12 y 13.       
@@ -324,6 +324,31 @@ l13 -> div:3. Repite el bucle. cumple condicion l9, no cumple 10, salta a 12. en
 l15 -> cumple condicion (si el numero no es primo, es que tiene algun divisor y en alguna repeticion l10 es verdadero y band pasa a falso)           
 l16-> 'Es primo'        
 fin
+.....
+COMPROBACIÓN CON NÚMERO NO PRIMO              
+l1-> inicia el algoritmo                      
+l2-> Ingrese un número:           
+l3-> nro= 4           
+l4-> asigna div=2              
+l5-> asigna band=Verdadero             
+l6-> no cumple condicion           
+l9-> cumple           
+l10-> cmple condicion           
+l11-> band=Falso. Esto hace que ya no cumpla la condicion en l10, por lo que sale del bucle Mientras           
+l15-> no cumple condicion y pasa a l17           
+l18-> 'No es primo'
+fin
+................
+COMPROBACIÓN CON NÚMERO 1             
+l1-> inicia el algoritmo                      
+l2-> Ingrese un número:           
+l3-> nro= 1           
+l4-> asigna div=2              
+l5-> asigna band=Verdadero             
+l6->  cumple condicion                
+L7-> 'Es primo'           
+fin            
+
 
 
 
