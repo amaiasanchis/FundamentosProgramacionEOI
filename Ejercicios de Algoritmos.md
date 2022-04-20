@@ -491,7 +491,24 @@ Escribir mayor
 FinAlgoritmo
       
 ```
+version 3
 
+```
+Algoritmo mayor3numeros  
+listanumeros <- []  
+para i=1 hasta 3 con paso 1 hacer
+	Escribir "Ingrese numero" + i
+	Leer num y añadir a listanumeros   
+   
+mayor <- 0  
+para num en listanumeros
+	Si num > mayor
+		mayor <- num
+	FinSi
+Escribir mayor
+FinAlgoritmo
+      
+```
 
 
 8. Factorial de cualquier número *hecho*
