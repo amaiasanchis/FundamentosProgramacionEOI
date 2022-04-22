@@ -387,15 +387,32 @@ fin
 	
 ```
 Algoritmo Cuadrados1al30       
-resul <- 0         
-nro <- 1      
-Mientras nro <= 30      
-	resul <- resul + nro*nro      
-	nro <- nro + 1      
-FinMientras      
-Escribe resul      
+	resul <- 0         
+	nro <- 1      
+	Mientras nro <= 30      
+		resul <- resul + nro*nro 
+		Escribir "El cuadrado de:" + nro + "-" + (nro*nro)
+		nro <- nro + 1      
+	FinMientras      
+	Escribe "La sumatoria de los cuadrados de 1 a 30:" + resul      
 FinAlgoritmo      
 ```
+```
+Algoritmo Cuadrados1al5       
+	nro <- 1      
+	Mientras nro <= 5      
+		Escribir "El cuadrado de:" + nro + "-" + (nro*nro)
+		nro <- nro + 1      
+	FinMientras      
+FinAlgoritmo      
+```
+nro=1,2,3,4,5,6
+El cuadrado de: 1 - 1
+El cuadrado de: 2 - 4
+El cuadrado de: 3 - 9
+El cuadrado de: 4 - 16
+El cuadrado de: 5 - 25
+
 
 2. Números primos (ejercicio 11) *hecho*
 3. Construir un avión de papel *hecho*
@@ -403,12 +420,14 @@ FinAlgoritmo
 
 ```
 Algoritmo construiravion
-Obtener un papel rectangular
-Doblar por la mitad por el lado más largo y desdoblar
-Doblar hacia el centro las esquinas superiores 
-Doblar de nuevo hacia el centro las esquinas superiores
-Doblar por la marca del paso 2
-Doblar hacia fuera la parte superior por cada lado 
+	Escribir "Obtener un papel rectangular"
+	Escribir "Doblar por la mitad por el lado más largo y desdoblar"
+	Escribir "Doblar hacia el centro las esquinas superiores" 
+	Escribir "Doblar de nuevo hacia el centro las esquinas superiores"
+	Escribir "Doblar por la marca del paso 2"
+	Escribir "Doblar hacia fuera la parte superior por cada lado"
+	Escribir "Comprobar los pasos anteriores"
+	Escribir "Probar que vuela "
 FinAlgoritmo 
 
 
@@ -418,53 +437,126 @@ FinAlgoritmo
 
 4. Realizar las cuatro operaciones básicas (Suma, Resta, Multiplicación, División)
 
+```
+Algoritmo OperacionesBasicas
 
+	\Creamos variable 1
+	Escribir 'Inserte valor 1: '
+	Leer x
+	\Creamos variable 2
+	Escribir 'Inserte valor 2: '
+	Leer y
+	\Creamos variable resultado
+	result <- 0
+	\Creamos variable entrada
+	e <- 0
+
+	\Suma
+	sum <- x + y
+	Escribir 'La suma de ' + x + 'y ' + y + ' es: ' + sum
+
+	\Resta
+	rest <- x - y
+	Escribir 'La resta de ' + x + 'y ' + y + ' es: ' + rest
+
+	\Multiplicacion
+	mult <- x * y
+	Escribir 'La multiplicación de ' + x + 'y ' + y + ' es: ' + mult
+
+	\Division
+	div <- x / y
+	Escribir 'La division de ' + x + 'entre ' + y + ' es: ' + div
+FinAlgoritmo
+
+
+```
+versión Juan Antonio
+
+```
+Algoritmo OperacionesBasicas
+
+	Definición e inincialización variable número 1 -> x = 0
+	Definición e inincialización variable número 2 -> y = 0
+	Definición e inincialización variable resultado -> z = 0
+	Definición e inincialización variable entrada -> e = 0
+
+		Preguntar por teclado número 1 -> Print ¿Que valor asignamos a numéro 1? Introducir número!!!
+		Esperar entrada por teclado-> x = input()
+
+		#Preguntar por teclado número 2 -> Print ¿Que valor asignamos a numéro 2? Introducir número!!!
+		Esperar entrada por teclado-> y = input()
+		
+		Sumamos x más y, asignamos resultado a z -> z = x + y
+		Escribimos resultado -> print "Resultado suma = " z
+		
+		Restamos x menos y, asignamos resultado a z -> z = x - y
+		Escribimos resultado -> print "Resultado resta = " z
+		
+		Multiplicamos x por y, asignamos resultado a z -> z = x * y
+		Escribimos resultado -> print "Resultado multiplicación = " z
+		
+		Dividimos x entre y, asignamos resultado a z -> z = x / y
+		Escribimos resultado -> print "Resultado división = " z
+
+
+Fin Programa
+```
+version Cristina
+
+```
+Algoritmo Calculadora
+        Escribir "Inserte operacion: "
+        Leer Num1
+        Leer Op
+        Leer Num2
+
+        Si Op es igual '+' Entonces
+            Escribir Num1 + Num2
+        Otro si Op es igual '-'
+            Escribir Num1 - Num2
+        Otro si Op es igual '*'
+            Escribir Num1 * Num2
+        Sino
+            Escribir Num1 / Num2
+        FinSi
+    FinAlgoritmo
+
+```
 
 5. Volumen y Area de un Cilindro *hecho*
 
 ```
-Algoritmo AreaCilindro
-h <- 0
-r <- 0
-A <- 0
-Escribir 'Escribir altura (h): '
-Leer h
-Escribir 'Escribir radio (r): '
-Leer r
-A <- 2*pi*r*(h+r)
-Escribir A
+Algoritmo AreaYVolumenCilindro
+	pi <- 3.14
+	Escribir 'Escribir altura (h): '
+	Leer h
+	Escribir 'Escribir radio (r): '
+	Leer r
+	A <- 2*pi*r*(h+r)
+	V <- pi*r^2*h
+	Escribir "Altura= " + A
+	Escribir "Volumen= " + V
 FinAlgoritmo
 
 ```
-
-```
-Algoritmo volumenCilindro
-h <- 0
-r <- 0
-V <- 0
-Escribir 'Escribir altura (h): '
-Leer h
-Escribir 'Escribir radio (r): '
-Leer r
-V <- pi*r^2*h
-Escribir V
-FinAlgoritmo
-
-```
-
 
 
  6. Pedir un libro en una biblioteca *hecho*
+ pueden ser la semilla de super algoritmos
 ```
 Algoritmo pedirlibrobiblioteca
-Ir al mostrador
-Si bibliotecarix disponible
-	Dar titulo y nombre del autor
-	Dar el carne 
-	Retirar el libro
-Sino
-	Esperar
-FinSi
+	Ir a la biblioteca
+	Ir al mostrador
+	Si bibliotecarix disponible
+		Dar titulo y nombre del autor
+		Dar el carnet 
+		Si libro disponible
+			Retirar el libro
+	Sino
+		Esperar
+	FinSi
+	Irse de la biblioteca
+FinAlgoritmo
 ```
 
 
@@ -480,39 +572,39 @@ Algoritmo mayordetresnumeros
 		Leer Num2      
 	Escribir "Ingrese numero 3"       
 		Leer Num3      
-mayor <- 0      
-//comparar num1 y num2      
-Si Num1 > Num2      
-	mayor <- Num1      
-Sino       
-	mayor <- Num2      
-FinSi      
-// comparar num2 y num3      
-Si Num3 > Num2      
-	mayor <- Num3      
-FinSi
-// comparar num1 y num3      
-Si Num3 > Num1      
-	mayor <- Num3      
-FinSi      
-Escribir mayor      
+	mayor <- 0      
+	//comparar num1 y num2      
+	Si Num1 > Num2      
+		mayor <- Num1      
+	Sino       
+		mayor <- Num2      
+	FinSi      
+	// comparar num2 y num3      
+	Si Num3 > Num2      
+		mayor <- Num3      
+	FinSi
+	// comparar num1 y num3      
+	Si Num3 > Num1      
+		mayor <- Num3      
+	FinSi      
+	Escribir mayor      
 FinAlgoritmo      
 ```
 versión 2
 ```
 Algoritmo mayor3numeros  
 listanumeros <- []  
-listaorden <- [1,2,3]  
-para orden en listaorden
-	Escribir "Ingrese numero" + orden
-	Leer num y añadir a listanumeros   
-   
-mayor <- 0  
-para num en listanumeros
-	Si num > mayor
-		mayor <- num
-	FinSi
-Escribir mayor
+	listaorden <- [1,2,3]  
+	para orden en listaorden
+		Escribir "Ingrese numero" + orden
+		Leer num y añadir a listanumeros   
+	
+	mayor <- 0  
+	para num en listanumeros
+		Si num > mayor
+			mayor <- num
+		FinSi
+	Escribir mayor
 FinAlgoritmo
       
 ```
@@ -520,20 +612,23 @@ version 3
 
 ```
 Algoritmo mayor3numeros  
-listanumeros <- []  
-para i=1 hasta 3 con paso 1 hacer
-	Escribir "Ingrese numero" + i
-	Leer num y añadir a listanumeros   
-   
-mayor <- 0  
-para num en listanumeros
-	Si num > mayor
-		mayor <- num
-	FinSi
-Escribir mayor
+	listanumeros <- []  
+	para i=1 hasta 3 con paso 1 hacer
+		Escribir "Ingrese numero" + i
+		Leer num y añadir a listanumeros   
+	
+	mayor <- 0  
+	para num en listanumeros
+		Si num > mayor
+			mayor <- num
+		FinSi
+	Escribir mayor
 FinAlgoritmo
       
 ```
+version Juan Antonio
+
+![](img\alg7.PNG) 
 
 
 8. Factorial de cualquier número *hecho*
@@ -582,11 +677,15 @@ FinAlgoritmo
 
 ```
 Algoritmo AdivinarPalabra
-Escribir 'Escribir palabra secreta: '
-Leer palsecreta
-Decir palabra
-Mientras palabra <> palsecreta
-	Decir palabra
-FinMientras
+	Escribir 'Escribir palabra secreta: '
+	Leer palsecreta
+	Escribir 'Insertar palabra'
+	Leer palabra
+	Mientras palabra <> palsecreta
+		Escribir 'Insertar palabra'
+		Leer palabra
+	FinMientras
 Escribir 'Victoria'
 ```
+version Billy       
+![](img\alg10.PNG) 
